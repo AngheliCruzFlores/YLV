@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eae2f3;
+  margin: 0;
+  padding: 0;
+}
+
+.container-chat {
+  display: flex;
+  height: 70vh;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 10px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.panel-left, .panel-right {
+  height: 100%;
+  overflow-y: auto;
+}
+
+h4 {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-item, .friend-item {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-item div, .friend-item div {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  flex: 1;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#personal-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.current-user {
+  background-color: #b8b9b1;
+  align-self: flex-end;
+  color: black;
+  margin-left: auto;
+}
+
+.other-user {
+  background-color: #96b1c8;
+  align-self: flex-start;
+  color: black;
+  margin-right: auto;
+}
+
+#send-message-form {
+  display: flex;
+  align-items: center;
+}
+
+#message-input {
+  flex: 1;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+#send-message-form button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#send-message-form button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+button .fa-solid {
+  color: #000000;
+}
+
+button:hover .fa-solid {
+  color: #0056b3;
+}
